@@ -32,27 +32,55 @@
         width: 90%;
         height: 100%;
         display: grid;
-        grid-template-columns: 1fr 2fr 3fr;
-        grid-template-rows: 20em 10em 10em 20em;
+        grid-template-columns: 0.5fr 2fr 1fr 2fr 2fr 2fr 1fr;
+        grid-template-rows: 10em 10em 10em 20em;
         
     }
 
     #bg_gray{
      background-color: gray;   
-     grid-column: 1/4;
+     grid-column: 1/8;
      grid-row: 1/3;
     }
 
     #bg_wht{
-        background-color:black;
-        grid-column: 1/4;
+        background-color:rgb(225, 221, 221);
+        grid-column: 1/8;
         grid-row: 3/5;
+        
+        display: grid;
+        grid-template-columns: 4fr 2fr 2fr 2fr;
     }
 
-    img{
+    #xd{
         width: 300px;
         grid-column: 2/3;
         grid-row: 2/5;
+        border-radius: 5%;
     }
     
+    #inf{
+        width: 200px;
+        height: 150px;
+    }
+
+    #profesion{
+        width: 200px;
+        height: 150px;
+    }
+
+    #prof{
+        display: flex;
+        flex-direction: column;
+        grid-column: 2/3 ;
+        align-items: center;
+    }
+    
+    #info{
+        display: flex;
+        flex-direction: column;
+        grid-column: 3/4;
+        align-items: center;
+    }
+
 }
