@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora 100% real</title>
+    <style>
+        @font-face {
+            font-family: DS;
+            src: url(font/DS-DIGIB.TTF);
+        }
+        *{
+            font-family: DS;
+            font-size: 24px;
+        }
+
+body {
+    width: 720px;
+    height: 720px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#result {
+    width: 100%;
+    height: 80px;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 36px;
+    padding: 10px;
+    text-align: right;
+    margin-bottom: 20px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+#keybord {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    flex-grow: 1;
+}
+
+button {
+    font-size: 24px;
+    padding: 20px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.num {
+    background-color: #4caf50;
+}
+
+.num:hover {
+    background-color: #388e3c;
+}
+
+.act {
+    background-color: #f39c12;
+}
+
+.act:hover {
+    background-color: #e67e22;
+}
+
+#limpiar {
+    background-color: #e74c3c;
+}
+
+#limpiar:hover {
+    background-color: #c0392b;
+}
+    </style>
+</head>
+<body>
+
+        <div id="result">
+        </div>
+        <div id="keybord">
+            <button class="num">1</button>
+            <button class="num">2</button>
+            <button class="num">3</button>
+            <button class="num">4</button>
+            <button class="num">5</button>
+            <button class="num">6</button>
+            <button class="num">7</button>
+            <button class="num">8</button>
+            <button class="num">9</button>
+            <button class="num">0</button>
+            <button class="act" id="mas">+</button>
+            <button class="act" id="menos">-</button>
+            <button class="act" id="por">*</button>
+            <button class="act" id="entre">/</button>
+            <button class="act" id="iwal">=</button>
+            <button class="act" id="limpiar" onclick="clean()"><-</button>
+        </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

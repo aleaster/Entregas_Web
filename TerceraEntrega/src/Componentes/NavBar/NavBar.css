@@ -1,0 +1,22 @@
+img{
+    height: 200px;
+    width: 300px;
+}
+
+#aside{
+    position:relative;
+    top: 0;
+    left: 0;
+
+    display: flex;
+
+    width: 300px;
+    flex-direction: column;
+    background-color: aliceblue;
+    align-items: center;
+    gap: 50px;
+}
+
+Button{
+    width: 200px;
+}
